@@ -22,37 +22,37 @@
                                         <rect key="frame" x="20" y="177" width="374" height="65"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Frame:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FA-Nf-IJN">
-                                                <rect key="frame" x="8" y="21" width="73" height="21"/>
+                                                <rect key="frame" x="8" y="21" width="77" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="FSn-8E-YMt"/>
-                                                    <constraint firstAttribute="width" constant="73" id="Pfl-4T-EwI"/>
+                                                    <constraint firstAttribute="width" constant="77" id="Pfl-4T-EwI"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zh-bn-AjE">
-                                                <rect key="frame" x="8" y="0.0" width="73" height="21"/>
+                                                <rect key="frame" x="8" y="0.0" width="77" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="3WE-Tl-MZi"/>
-                                                    <constraint firstAttribute="width" constant="73" id="vxs-1U-0Ga"/>
+                                                    <constraint firstAttribute="width" constant="77" id="vxs-1U-0Ga"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlG-V9-scV">
-                                                <rect key="frame" x="8" y="43" width="73" height="21"/>
+                                                <rect key="frame" x="8" y="43" width="77" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="L8i-fa-Pjy"/>
-                                                    <constraint firstAttribute="width" constant="73" id="sxT-Cr-Stg"/>
+                                                    <constraint firstAttribute="width" constant="77" id="sxT-Cr-Stg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etA-Qb-RcN">
-                                                <rect key="frame" x="89" y="0.0" width="277" height="21"/>
+                                                <rect key="frame" x="93" y="0.0" width="273" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="RXX-Ug-RE0"/>
                                                 </constraints>
@@ -61,7 +61,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbQ-Ci-Yat">
-                                                <rect key="frame" x="89" y="44" width="277" height="21"/>
+                                                <rect key="frame" x="93" y="44" width="273" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="UpT-i5-kvW"/>
                                                 </constraints>
@@ -70,7 +70,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTC-Yt-ZP6">
-                                                <rect key="frame" x="89" y="21" width="277" height="21"/>
+                                                <rect key="frame" x="93" y="21" width="273" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="Oqo-dr-ZlS"/>
                                                 </constraints>
@@ -116,39 +116,87 @@
                                 <state key="normal" title="Play">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mbg-Xk-nZ5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZH-MG-QKY">
                                 <rect key="frame" x="147.5" y="302" width="119" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Stop">
+                                <state key="normal" title="Pause">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6E-KX-kau"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOw-wC-PfQ">
                                 <rect key="frame" x="274.5" y="302" width="119.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Pause">
+                                <state key="normal" title="Stop">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="stopButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOy-Va-pTF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWo-OR-TIv">
+                                <rect key="frame" x="20" y="357" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xed-Nn-Mxd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Jumping Watermelon">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpingWatermelonButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wlv-2C-2ah"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poL-3i-cOd">
+                                <rect key="frame" x="20" y="413" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6KX-PP-A8j"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="jbh-aj-eUI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Winking Watermelon">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="winkingWatermelonButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ij2-CQ-haj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="YWo-OR-TIv" firstAttribute="top" secondItem="PVW-Dp-3PH" secondAttribute="bottom" constant="25" id="AWN-sN-SOU"/>
                             <constraint firstItem="PVW-Dp-3PH" firstAttribute="top" secondItem="FV0-rm-zUr" secondAttribute="bottom" constant="8" id="Duo-ac-c0v"/>
+                            <constraint firstItem="YWo-OR-TIv" firstAttribute="leading" secondItem="PVW-Dp-3PH" secondAttribute="leading" id="EQt-Fj-qUI"/>
                             <constraint firstItem="bZH-MG-QKY" firstAttribute="top" secondItem="PVW-Dp-3PH" secondAttribute="top" id="FN4-Bp-6b4"/>
                             <constraint firstItem="bZH-MG-QKY" firstAttribute="leading" secondItem="PVW-Dp-3PH" secondAttribute="trailing" constant="8" id="Iay-yp-v04"/>
+                            <constraint firstItem="poL-3i-cOd" firstAttribute="top" secondItem="YWo-OR-TIv" secondAttribute="bottom" constant="26" id="Sow-gj-EPI"/>
                             <constraint firstItem="FV0-rm-zUr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="V6b-5F-jfz"/>
+                            <constraint firstItem="poL-3i-cOd" firstAttribute="trailing" secondItem="YWo-OR-TIv" secondAttribute="trailing" id="Y5c-4Z-Atg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FOw-wC-PfQ" secondAttribute="trailing" constant="20" id="bDk-Pp-vLs"/>
                             <constraint firstItem="FOw-wC-PfQ" firstAttribute="width" secondItem="PVW-Dp-3PH" secondAttribute="width" id="eaP-th-LAn"/>
                             <constraint firstItem="FOw-wC-PfQ" firstAttribute="top" secondItem="PVW-Dp-3PH" secondAttribute="top" id="g5a-t4-Kl7"/>
                             <constraint firstItem="PVW-Dp-3PH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k1D-3B-nh5"/>
                             <constraint firstItem="FOw-wC-PfQ" firstAttribute="leading" secondItem="bZH-MG-QKY" secondAttribute="trailing" constant="8" id="k2U-4s-E2B"/>
                             <constraint firstItem="FV0-rm-zUr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mla-FN-tGT"/>
+                            <constraint firstItem="FOw-wC-PfQ" firstAttribute="trailing" secondItem="YWo-OR-TIv" secondAttribute="trailing" id="oX8-IM-bsM"/>
                             <constraint firstItem="bZH-MG-QKY" firstAttribute="width" secondItem="PVW-Dp-3PH" secondAttribute="width" id="u8B-lu-yrH"/>
+                            <constraint firstItem="poL-3i-cOd" firstAttribute="leading" secondItem="YWo-OR-TIv" secondAttribute="leading" id="uGg-bM-FsB"/>
                             <constraint firstItem="FV0-rm-zUr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wEA-CE-rwO"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="FV0-rm-zUr" id="PN1-yB-jag"/>
+                        <outlet property="frameLabel" destination="yTC-Yt-ZP6" id="g3t-ll-bsb"/>
+                        <outlet property="progressLabel" destination="etA-Qb-RcN" id="CDI-mp-xMv"/>
+                        <outlet property="timeLabel" destination="sbQ-Ci-Yat" id="mvH-b3-fmx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
