@@ -27,6 +27,13 @@ class ViewController: UIViewController {
         let jsonName = "Watermelon"
         animation = Animation.named(jsonName)
         
+        // Print out animation's total frame count
+        print(animation.endFrame)
+
+        // Print out animation's frame rate
+        print(animation.framerate)
+        
+        
         // Set animation to AnimationView
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
