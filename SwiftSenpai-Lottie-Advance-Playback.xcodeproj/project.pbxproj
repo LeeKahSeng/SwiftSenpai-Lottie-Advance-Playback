@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F9275D482441BB79001CE8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9275D462441BB79001CE8C3 /* Main.storyboard */; };
 		F9275D4A2441BB82001CE8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9275D492441BB82001CE8C3 /* Assets.xcassets */; };
 		F9275D4D2441BB82001CE8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9275D4B2441BB82001CE8C3 /* LaunchScreen.storyboard */; };
+		F93208C22441BE63003B615B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F93208C12441BE63003B615B /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F93208C22441BE63003B615B /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = "SwiftSenpai-Lottie-Advance-Playback";
+			packageProductDependencies = (
+				F93208C12441BE63003B615B /* Lottie */,
+			);
 			productName = "SwiftSenpai-Lottie-Advance-Playback";
 			productReference = F9275D3D2441BB78001CE8C3 /* SwiftSenpai-Lottie-Advance-Playback.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = F9275D342441BB78001CE8C3;
+			packageReferences = (
+				F93208C02441BE63003B615B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = F9275D3E2441BB78001CE8C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F93208C02441BE63003B615B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F93208C12441BE63003B615B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F93208C02441BE63003B615B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9275D352441BB78001CE8C3 /* Project object */;
 }
