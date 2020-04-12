@@ -23,6 +23,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Create CADisplayLink to display frame, progress and time
+        displayLink = CADisplayLink(target: self, selector: #selector(animationCallback))
+        displayLink?.add(to: .current, forMode: RunLoop.Mode.default)
+        
         // Create Animation object
         let jsonName = "Watermelon"
         animation = Animation.named(jsonName)
@@ -32,15 +36,10 @@ class ViewController: UIViewController {
 
         // Print out animation's frame rate
         print(animation.framerate)
-        
-        
+            
         // Set animation to AnimationView
         animationView.animation = animation
         animationView.contentMode = .scaleAspectFit
-        
-        // For display frame, progress, time
-        displayLink = CADisplayLink(target: self, selector: #selector(animationCallback))
-        displayLink?.add(to: .current, forMode: RunLoop.Mode.default)
     }
     
     @IBAction func playButtonTapped(_ sender: Any) {
