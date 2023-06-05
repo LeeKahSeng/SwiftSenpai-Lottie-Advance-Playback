@@ -11,9 +11,9 @@ import Lottie
 
 class ViewController: UIViewController {
 
-    var animation: Animation!
+    var animation: LottieAnimation!
     
-    @IBOutlet weak var animationView: AnimationView!
+    @IBOutlet weak var animationView: LottieAnimationView!
     @IBOutlet weak var progressLabel: UILabel!
     @IBOutlet weak var frameLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         
         // Create Animation object
         let jsonName = "Watermelon"
-        animation = Animation.named(jsonName)
+        animation = LottieAnimation.named(jsonName)
         
         // Print out animation's total frame count
         print(animation.endFrame)
